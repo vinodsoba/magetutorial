@@ -1,3 +1,91 @@
+@font-face {
+  font-family: assistant;
+  src: url("../fonts/Assistant/Assistant-VariableFont_wght.ttf");
+}
+
 header.page-header {
-  background-color: white;
+  background-color: #fff;
+}
+
+header.page-header .panel.wrapper {
+  background-color: #b52172;
+}
+
+header.page-header .row {
+  width: 100%;
+  display: inline-flex;
+}
+
+header.page-header .row .header-column1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header.page-header .row .header-column1 .nav-sections {
+  width: 100%;
+}
+
+header.page-header .row .header-column2 {
+  width: 100%;
+}
+
+header.page-header .row .header-column3 {
+  width: 100%;
+}
+
+header.page-header .row .header-column3 .block-search {
+  float: left !important;
+}
+
+header.page-header .row .header-column3 .minicart-wrapper {
+  float: right !important;
+}
+
+nav.navigation {
+  background-color: #fff;
+}
+
+@font-face {
+  font-family: assistant;
+  src: url("../fonts/Assistant/Assistant-VariableFont_wght.ttf");
+}
+
+.freeshipping {
+  width: 366px;
+  margin: 0 auto;
+  font-family: "assistant", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  color: #fff;
+}
+
+@media (max-width: 776px) {
+  .freeshipping {
+    width: 100%;
+  }
+}
+
+ul.header.links a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul.header.links a:hover {
+  text-decoration: underline;
+}
+
+.navigation ul li.level0 {
+  margin-right: 2px;
+}
+
+.navigation ul li.level0 a {
+  font-family: "assistant", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-sections {
+  background-color: #fff;
 }

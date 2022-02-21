@@ -5,3 +5,8 @@ RewriteCond %{REQUEST_URI} !^/update/
 RewriteCond %{REQUEST_URI} !^/dev/
 RewriteRule .* /pub/$0 [L]
 DirectoryIndex index.php
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} on
+RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

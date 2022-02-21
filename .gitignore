@@ -17,7 +17,6 @@ atlassian*
 /app/config_sandbox
 /app/etc/config.php
 /app/etc/env.php
-/app/design/frontend/beautybop/simple/node_modules/*
 /app/code/Magento/TestModule*
 /lib/internal/flex/uploader/.actionScriptProperties
 /lib/internal/flex/uploader/.flexProperties

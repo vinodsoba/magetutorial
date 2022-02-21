@@ -40,12 +40,22 @@ gulp.task('clear', () =>
 );
 
 
+gulp.task('css', async function(){
+    return gulp.src('web/css/styles.min.css')
+    .pipe(concatCss('styles.min.css'))
+    .pipe(gulp.dest('../../../../../pub/static/frontend/Beautybop/simple/en_GB/css'))
+    .pipe(connect.reload())
+    .pipe(browserSync.stream());
+});
+
 gulp.task('watch', function(){
     livereload.listen()
     gulp.watch('web/sass/**/*.scss', ['sass'])
-    gulp.watch('web/js/**/*.js', ['js']);
+    gulp.watch('web/js/**/*.js', ['js'])
+    gulp.watch('web/css/**/*.css', ['css'])
     
 });
+
 
 // connect live reload on browser
 gulp.task('connect', function() {
@@ -54,8 +64,10 @@ gulp.task('connect', function() {
     });
 });
 
+// added sass, js, css to be watched
 gulp.watch('web/sass/**/*.scss', gulp.series(['sass', ]));
 gulp.watch('web/js/**/*.js', gulp.series(['js']));
+gulp.watch('web/css/**/*css', gulp.series(['css']));
 
 gulp.task('default', gulp.series(['browserSync']), gulp.series(['watch']), gulp.series(['clear']));
 

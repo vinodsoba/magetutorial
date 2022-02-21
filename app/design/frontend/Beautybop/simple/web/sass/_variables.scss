@@ -1,0 +1,20 @@
+$white: #fff;
+$black: #000;
+$pink: #eb38e5;
+$bbop-purple: #b52172;
+
+
+
+// font size
+$fontsize_xxsmall: 12px;
+$fontsize_xsmall: 16px;
+$fontsize_small: 20px;
+$fontsize_medium: 30px;
+$fontsize_large: 35px;
+
+
+// font Assistant
+@font-face {
+    font-family: assistant;
+    src: url(./../fonts/Assistant/Assistant-VariableFont_wght.ttf);
+}

@@ -1,0 +1,28 @@
+@import 'variables';
+
+.freeshipping {
+    width: 366px;
+    margin: 0 auto;
+    font-family: 'assistant', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+    font-size: $fontsize_xxsmall;
+    color: $white;
+
+    @media ( max-width: 776px) {
+        width: 100%;
+    }
+}
+
+ul.header.links {
+    a {
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    
+}

@@ -29,7 +29,7 @@
 # Modules can be loaded only at the very beginning of the Nginx config file, please move the line below to the main config file
 # load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
 
-#root $MAGE_ROOT/pub;
+root $MAGE_ROOT/pub;
 
 index index.php;
 autoindex off;

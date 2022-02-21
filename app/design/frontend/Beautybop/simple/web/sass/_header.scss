@@ -1,3 +1,47 @@
+@import 'variables';
+
 header.page-header {
-    background-color: white;
+    background-color: $white;
+
+    .panel.wrapper {
+        background-color: $bbop-purple;
+    }
+
+    .row {
+        width: 100%;
+        display: inline-flex;
+
+        .header-column1 {
+            width:100%;
+            display: flex;
+            justify-content: space-around;
+
+            .nav-sections {
+                width: 100%;
+            }
+
+        }
+
+        .header-column2 {
+            width: 100%;         
+        }
+
+        .header-column3 {
+            width:100%;   
+            
+            .block-search {
+                float: left !important;
+            }
+
+            .minicart-wrapper {
+                float: right !important;
+            }
+        }
+    }
 }
+
+nav.navigation  {
+    background-color: $white;
+
+}
+

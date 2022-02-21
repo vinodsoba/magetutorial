@@ -1,0 +1,16 @@
+.navigation {
+    ul {
+        li.level0 {
+        margin-right:2px;
+            a {
+                font-family: 'assistant', Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                font-size: $fontsize_xsmall;
+            }
+        }
+    }
+}
+
+.nav-sections {
+    background-color: $white;
+}

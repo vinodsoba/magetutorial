@@ -5,12 +5,41 @@
  * See COPYING.txt for license details.
  */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="logo">
             <arguments>
-                <argument name="logo_width" xsi:type="number">175</argument>
+                <argument name="logo_width" xsi:type="number">413</argument>
+                <argument name="logo_height" xsi:type="number">78</argument>
             </arguments>
+        </referenceBlock>  
+        <referenceBlock name="header.panel.wrapper">
+            <container name="free.shipping" htmlTag="div" htmlClass="freeshipping">
+                <block class="Magento\Framework\View\Element\Template" name="freeshipping" template="Magento_Theme::html/custom.phtml" /> 
+            </container>
         </referenceBlock>
+
+        <referenceBlock name="header-wrapper">
+            <container name="header-row" htmlClass="row" htmlTag="div">
+
+                <container name="headercol3" htmlClass="headercol3 col-sm-12 col-md-4" htmlTag="div" before="-">        
+                </container>
+
+                <container name="headercol2" htmlClass="headercol2 col-sm-12 col-md-4" htmlTag="div" before="-">         
+                </container>
+
+                 <container name="headercol1" htmlClass="headercol1 col-sm-12 col-md-4" htmlTag="div" before="-">        
+                </container>
+            </container>
+        </referenceBlock>  
+
+
+        <move element="navigation.sections" destination="headercol2" after="logo"/>
+        <move element="logo" destination="headercol1" before="-"/>
+        <move element="free.shipping" destination="header.panel" before="skip_to_content" />
+        <move element="minicart" destination="headercol3" after="-" />
+        <move element="top.search" destination="headercol3" before="minicart" />
+        <referenceBlock name="wish-list-link" remove="true" />
+        <referenceBlock name="advanced-search-link" remove="true"/>
     </body>
 </page>
