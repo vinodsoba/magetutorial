@@ -1,0 +1,9 @@
+@import 'variables';
+
+.footer.links {    
+    a {
+        font-size: $fontsize_xsmall;
+        text-decoration: none;
+        color: $black;
+    }
+}
