@@ -6,7 +6,7 @@
     font-family: 'assistant', Arial, Helvetica, sans-serif;
     letter-spacing: 0.1em;
     font-size: $fontsize_xxsmall;
-    color: $white;
+    color: $black;
 
     @media ( max-width: 776px) {
         width: 100%;
@@ -15,7 +15,7 @@
 
 ul.header.links {
     a {
-        color: $white;
+        color: $black;
         text-transform: uppercase;
         text-decoration: none;
 
