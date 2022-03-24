@@ -1,3 +1,19 @@
+:root {
+  --fs-small-text: 1.2em;
+  --fs-font-family: "assistant", Arial, Helvetica, sans-serif;
+  --sd--small-text: 1.3em;
+  --fs-font-family: "assistant", Arial, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--fs-font-family) !important;
+}
+
 @font-face {
   font-family: assistant;
   src: url("../fonts/Assistant/Assistant-VariableFont_wght.ttf");
@@ -46,6 +62,22 @@ nav.navigation {
   background-color: #fff;
 }
 
+:root {
+  --fs-small-text: 1.2em;
+  --fs-font-family: "assistant", Arial, Helvetica, sans-serif;
+  --sd--small-text: 1.3em;
+  --fs-font-family: "assistant", Arial, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--fs-font-family) !important;
+}
+
 @font-face {
   font-family: assistant;
   src: url("../fonts/Assistant/Assistant-VariableFont_wght.ttf");
@@ -54,9 +86,9 @@ nav.navigation {
 .freeshipping {
   width: 366px;
   margin: 0 auto;
-  font-family: "assistant", Arial, Helvetica, sans-serif;
+  font-family: var(--fs-font-family);
   letter-spacing: 0.1em;
-  font-size: 12px;
+  font-size: var(--fs-small-text);
   color: #000;
 }
 
@@ -64,6 +96,34 @@ nav.navigation {
   .freeshipping {
     width: 100%;
   }
+}
+
+.panel.header {
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+.panel.header .links {
+  display: flex !important;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.toprowcol1.col-sm-12.col-md-4,
+.toprowcol2.col-sm-12.col-md-4 {
+  display: flex;
+  align-items: center;
+}
+
+.toprowcol3.col-sm-12.col-md-4 {
+  padding-top: 1em;
+}
+
+ul.header.links > li {
+  list-style: none;
+  margin-right: 0px;
+  display: flex;
+  align-items: center;
 }
 
 ul.header.links a {
@@ -74,6 +134,27 @@ ul.header.links a {
 
 ul.header.links a:hover {
   text-decoration: underline;
+}
+
+ul.header.links .greet.welcome,
+ul.header.links .compare {
+  display: none;
+}
+
+:root {
+  --fs-small-text: 1.2em;
+  --fs-font-family: "assistant", Arial, Helvetica, sans-serif;
+  --sd--small-text: 1.3em;
+  --fs-font-family: "assistant", Arial, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--fs-font-family) !important;
 }
 
 @font-face {
