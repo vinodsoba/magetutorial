@@ -3,9 +3,9 @@
 .freeshipping {
     width: 366px;
     margin: 0 auto;
-    font-family: 'assistant', Arial, Helvetica, sans-serif;
+    font-family: var(--fs-font-family);
     letter-spacing: 0.1em;
-    font-size: $fontsize_xxsmall;
+    font-size: var(--fs-small-text);
     color: $black;
 
     @media ( max-width: 776px) {
@@ -13,16 +13,44 @@
     }
 }
 
+.panel.header {
+    @include py0;
+
+    & .links {
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+}
+
+.toprowcol1.col-sm-12.col-md-4,
+.toprowcol2.col-sm-12.col-md-4 {
+    display: flex;
+    align-items: center; 
+}
+
+.toprowcol3.col-sm-12.col-md-4 {
+    padding-top: 1em;
+}
+
 ul.header.links {
+    & > li {
+        list-style: none;
+        margin-right:0px;
+        display: flex;
+        align-items: center;
+    }
     a {
         color: $black;
         text-transform: uppercase;
         text-decoration: none;
-
         &:hover {
             text-decoration: underline;
         }
-    }
+    } 
 
-    
+    .greet.welcome,
+    .compare {
+        display: none;
+    }
 }

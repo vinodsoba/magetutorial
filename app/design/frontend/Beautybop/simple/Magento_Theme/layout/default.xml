@@ -12,13 +12,35 @@
                 <argument name="logo_width" xsi:type="number">413</argument>
                 <argument name="logo_height" xsi:type="number">78</argument>
             </arguments>
-        </referenceBlock>  
+        </referenceBlock> 
+        <!--<referenceBlock name="header.panel.wrapper">
+            <container name="opening.hours" htmlTag="div" htmlClass="openinghours">
+                <block class="Magento\Framework\View\Element\Template" name="openinghours" template="Magento_Theme::html/opening.phtml" /> 
+            </container>
+        </referenceBlock> 
         <referenceBlock name="header.panel.wrapper">
             <container name="free.shipping" htmlTag="div" htmlClass="freeshipping">
                 <block class="Magento\Framework\View\Element\Template" name="freeshipping" template="Magento_Theme::html/custom.phtml" /> 
             </container>
+        </referenceBlock> -->
+
+        <!-- Top Nav -->
+        <referenceBlock name="header.panel">
+            <container name="top-row" htmlClass="row" htmlTag="div">
+                <container name="toprowcol1" htmlClass="toprowcol1 col-sm-12 col-md-4" htmlTag="div" >  
+                    <block class="Magento\Framework\View\Element\Template" name="openinghours" template="Magento_Theme::html/opening.phtml" />      
+                </container>
+
+                <container name="toprowcol2" htmlClass="toprowcol2 col-sm-12 col-md-4" htmlTag="div" > 
+                    <block class="Magento\Framework\View\Element\Template" name="freeshipping" template="Magento_Theme::html/custom.phtml" />      
+                </container>
+
+                <container name="toprowcol3" htmlClass="toprowcol3 col-sm-12 col-md-4" htmlTag="div">         
+                </container>
+            </container>
         </referenceBlock>
 
+        
         <referenceBlock name="header-wrapper">
             <container name="header-row" htmlClass="row" htmlTag="div">
 
@@ -35,8 +57,10 @@
 
 
         <move element="navigation.sections" destination="headercol2" after="logo"/>
-        <move element="logo" destination="headercol1" before="-"/>
-        <move element="free.shipping" destination="header.panel" before="skip_to_content" />
+        <move element="logo" destination="headercol1" before="navigation.sections"/>
+        <move element="opening.hours" destination="toprowcol1" before="free.shipping"/>
+        <move element="free.shipping" destination="toprowcol2" before="top.links" />
+        <move element="top.links" destination="toprowcol3" after="free.shipping"/>
         <move element="minicart" destination="headercol3" after="-" />
         <move element="top.search" destination="headercol3" before="minicart" />
         <referenceBlock name="wish-list-link" remove="true" />
