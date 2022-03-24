@@ -13,9 +13,36 @@ $fontsize_small: 20px;
 $fontsize_medium: 30px;
 $fontsize_large: 35px;
 
+:root {
+    --fs-small-text: 1.2em;
+    --fs-font-family: 'assistant', Arial, Helvetica, sans-serif;
+
+    --sd--small-text: 1.3em;
+    --fs-font-family: 'assistant', Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-family: var(--fs-font-family) !important;
+}
 
 // font Assistant
 @font-face {
     font-family: assistant;
     src: url(./../fonts/Assistant/Assistant-VariableFont_wght.ttf);
+}
+
+
+@mixin py1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+} 
+
+@mixin py0 {
+    padding-top: 0em;
+    padding-bottom: 0em;
 }
