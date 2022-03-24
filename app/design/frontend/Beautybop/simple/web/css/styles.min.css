@@ -90,12 +90,18 @@ body {
   letter-spacing: 0.1em;
   font-size: var(--fs-small-text);
   color: #000;
+  text-align: center;
 }
 
 @media (max-width: 776px) {
   .freeshipping {
     width: 100%;
   }
+}
+
+.opening-hours {
+  font-family: var(--fs-font-family);
+  font-size: var(--fs-small-text);
 }
 
 .panel.header {
@@ -105,7 +111,6 @@ body {
 
 .panel.header .links {
   display: flex !important;
-  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -116,12 +121,17 @@ body {
 }
 
 .toprowcol3.col-sm-12.col-md-4 {
-  padding-top: 1em;
+  position: relative;
+}
+
+ul.header.links {
+  position: absolute;
+  right: 0;
 }
 
 ul.header.links > li {
   list-style: none;
-  margin-right: 0px;
+  margin-right: 10px;
   display: flex;
   align-items: center;
 }
@@ -134,6 +144,10 @@ ul.header.links a {
 
 ul.header.links a:hover {
   text-decoration: underline;
+}
+
+ul.header.links > .link > .authorization-link {
+  margin-left: 36px;
 }
 
 ul.header.links .greet.welcome,
