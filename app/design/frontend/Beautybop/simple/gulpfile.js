@@ -29,7 +29,7 @@ gulp.task('sass', async function(){
 gulp.task('js', async function(){
     return gulp.src('web/js/**/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('web/js'))
+    .pipe(gulp.dest('../../../../../pub/static/frontend/Beautybop/simple/en_GB/js'))
     .pipe(connect.reload())
     .pipe(browserSync.stream());
 });
