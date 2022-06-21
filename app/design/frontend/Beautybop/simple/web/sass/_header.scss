@@ -37,22 +37,34 @@ header.page-header {
                 float: right !important;
             }
         }
+
+
+
+
+    }
+
+    .header.content {
+        .headercol4 {
+            position: relative;
+            .minicart-wrapper {
+                position: absolute;
+                left:0;
+                display: flex;
+                flex-direction: column;
+
+                .action.showcart::before,
+                .action.showcart.active::before{
+                    content: url(/static/frontend/Beautybop/simple/en_GB/images/cart.png);
+           
+                }
+            }
+        }
     }
 }
 
 nav.navigation  {
     background-color: $white;
-
 }
 
-// cart 
 
-.minicart-wrapper .action.showcart:before {
-    content: '\'';
-    background-image: url(/static/frontend/Beautybop/simple/en_GB/images/cart.png);
-    background-repeat: no-repeat;
-    width: 69px;
-    height: auto;
-        
-}
 
