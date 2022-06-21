@@ -58,16 +58,24 @@ header.page-header .row .header-column3 .minicart-wrapper {
   float: right !important;
 }
 
-nav.navigation {
-  background-color: #fff;
+header.page-header .header.content .headercol4 {
+  position: relative;
 }
 
-.minicart-wrapper .action.showcart:before {
-  content: "'";
-  background-image: url("../../../../../../../../../static/frontend/Beautybop/simple/en_GB/images/cart.png");
-  background-repeat: no-repeat;
-  width: 69px;
-  height: auto;
+header.page-header .header.content .headercol4 .minicart-wrapper {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header.page-header .header.content .headercol4 .minicart-wrapper .action.showcart::before,
+header.page-header .header.content .headercol4 .minicart-wrapper .action.showcart.active::before {
+  content: url("../../../../../../../../../../static/frontend/Beautybop/simple/en_GB/images/cart.png");
+}
+
+nav.navigation {
+  background-color: #fff;
 }
 
 :root {
