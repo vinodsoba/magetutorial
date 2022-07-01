@@ -17,21 +17,23 @@ gulp.task('browserSync', function() {
 });
 
 
-gulp.task('sass', async function(){
+gulp.task('sass', done => {
     return gulp.src('web/sass/**/*.scss')
     .pipe(sass())
     .pipe(concatCss('styles.min.css'))
     .pipe(gulp.dest('web/css'))
     .pipe(connect.reload())
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
+    done();
 });
 
-gulp.task('js', async function(){
+gulp.task('js', done => {
     return gulp.src('web/js/**/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('../../../../../pub/static/frontend/Beautybop/simple/en_GB/js'))
     .pipe(connect.reload())
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
+    done();
 });
 
 
@@ -40,19 +42,21 @@ gulp.task('clear', () =>
 );
 
 
-gulp.task('css', async function(){
+gulp.task('css', done => {
     return gulp.src('web/css/styles.min.css')
     .pipe(concatCss('styles.min.css'))
     .pipe(gulp.dest('../../../../../pub/static/frontend/Beautybop/simple/en_GB/css'))
     .pipe(connect.reload())
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
+    done();
 });
 
-gulp.task('watch', function(){
+gulp.task('watch', function(done){
     livereload.listen()
     gulp.watch('web/sass/**/*.scss', ['sass'])
     gulp.watch('web/js/**/*.js', ['js'])
     gulp.watch('web/css/**/*.css', ['css'])
+    done()
     
 });
 

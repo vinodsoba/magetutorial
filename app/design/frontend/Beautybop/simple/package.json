@@ -18,5 +18,8 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2"
   }
 }
