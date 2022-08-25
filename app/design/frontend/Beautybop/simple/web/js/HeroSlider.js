@@ -1,6 +1,10 @@
 require([
   'jquery'
 ], function(){
- console.log('Your JQuery is ready for action');  
+ $(document).ready(function(){
+  $(this).click(function(){
+    alert("This works");
+  })
+ });  
 });
 
