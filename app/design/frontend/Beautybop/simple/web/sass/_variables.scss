@@ -28,6 +28,7 @@ $fontsize_large: 35px;
 
 body {
     font-family: var(--fs-font-family) !important;
+    box-sizing: border-box;
 }
 
 // font Assistant

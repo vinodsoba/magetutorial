@@ -1,5 +1,9 @@
 @import 'variables';
 
+footer {
+    background-color: $white;
+}
+
 .footer.links {    
     a {
         font-size: $fontsize_xsmall;
