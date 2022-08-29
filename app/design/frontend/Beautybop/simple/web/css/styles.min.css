@@ -1795,6 +1795,17 @@ body {
   padding-right: 8em;
 }
 
+.block-search.custom .label {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .block-search input {
   border: none;
   padding-right: 58px !important;
@@ -1867,17 +1878,6 @@ body {
 
 .searchbox-open {
   width: 100%;
-}
-
-.label {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
 }
 
 .navigation ul li.level0 {
