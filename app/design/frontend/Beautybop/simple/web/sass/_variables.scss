@@ -3,6 +3,7 @@ $black: #000;
 $pink: #eb38e5;
 $bbop-purple: #b52172;
 $lightpink: #ffd7d7;
+$bbop-purple--dark: #4f204d;
 
 
 
@@ -33,7 +34,7 @@ body {
 
 // font Assistant
 @font-face {
-    font-family: assistant;
+    font-family: 'assistant';
     src: url(./../fonts/Assistant/Assistant-VariableFont_wght.ttf);
 }
 
@@ -162,7 +163,7 @@ body {
 
 @mixin section-title {
   font-size: 3rem;
-  color: $black;  
+  color: $white;  
   text-transform: capitalize;
   text-align: center;
 }
