@@ -1,0 +1,33 @@
+<h1>show list of Categories<h1>
+    
+<?php
+/*$productId = 2; // YOUR PRODUCT ID
+$product = $block->getProductById($productId);
+
+// for current product
+// $product = $block->getCurrentProduct();
+
+$categoryIds = $product->getCategoryIds();
+
+$categories = $block->getCategoryCollection()
+                    ->addAttributeToFilter('entity_id', $categoryIds);
+					
+foreach ($categories as $category) {
+    echo $category->getName() . '<br>';
+}
+*/
+
+
+$parentCategoryId = 8;
+$productCollection = $block->getProductCollection($parentCategoryId);
+
+?>
+<div>
+    <ol class="row list">
+        <?php foreach ($productCollection as $product): ?>
+            <li>
+                <span><?php echo $product->getSku(). ' - '. $product->getName() ?></span>
+            </li>
+        <?php endforeach; ?>    
+    </ol>
+</div>

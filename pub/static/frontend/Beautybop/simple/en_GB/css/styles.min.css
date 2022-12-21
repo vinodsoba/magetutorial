@@ -16,7 +16,7 @@ body {
 }
 
 @font-face {
-  font-family: assistant;
+  font-family: "assistant";
   src: url("../fonts/Assistant/Assistant-VariableFont_wght.ttf");
 }
 
@@ -417,7 +417,7 @@ header.page-header {
 }
 
 header.page-header .panel.wrapper {
-  background-color: #ffd7d7;
+  background-color: #4E1C88;
 }
 
 header.page-header .row {
@@ -489,7 +489,7 @@ body {
 }
 
 @font-face {
-  font-family: assistant;
+  font-family: "assistant";
   src: url("../fonts/Assistant/Assistant-VariableFont_wght.ttf");
 }
 
@@ -891,7 +891,6 @@ body {
   font-family: var(--fs-font-family);
   letter-spacing: 0.1em;
   font-size: var(--fs-small-text);
-  color: #000;
   text-align: center;
 }
 
@@ -914,6 +913,12 @@ body {
 .panel.header .links {
   display: flex !important;
   align-items: center;
+}
+
+.panel.header .row .toprowcol1,
+.panel.header .row .toprowcol2,
+.panel.header .row .toprowcol3 ul.header.links a {
+  color: #fff;
 }
 
 .toprowcol1.col-sm-12.col-md-4,
@@ -939,7 +944,6 @@ ul.header.links > li {
 }
 
 ul.header.links a {
-  color: #000;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -975,7 +979,7 @@ body {
 }
 
 @font-face {
-  font-family: assistant;
+  font-family: "assistant";
   src: url("../fonts/Assistant/Assistant-VariableFont_wght.ttf");
 }
 
@@ -1399,7 +1403,7 @@ body {
 }
 
 @font-face {
-  font-family: assistant;
+  font-family: "assistant";
   src: url("../fonts/Assistant/Assistant-VariableFont_wght.ttf");
 }
 
@@ -2578,9 +2582,13 @@ body {
   display: none;
 }
 
-h1.section-title {
+.section-1 {
+  background-color: #4f204d;
+}
+
+.section-1 h1.section-title {
   font-size: 3rem;
-  color: #000;
+  color: #fff;
   text-transform: capitalize;
   text-align: center;
 }

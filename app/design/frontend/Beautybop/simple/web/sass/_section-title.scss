@@ -1,3 +1,8 @@
-h1.section-title {
-    @include section-title;
+.section-1 {
+    background-color: $bbop-purple--dark;
+    ;
+
+    h1.section-title {
+        @include section-title;
+    }
 }

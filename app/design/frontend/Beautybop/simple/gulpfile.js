@@ -10,8 +10,8 @@ const cache = require('gulp-cache');
 // Static server
 gulp.task('browserSync', function() {
     browserSync.init({  
-            proxy: "dev.beautybop.co.uk/",
-            hostname: "dev.beautybop.co.uk/",
+            proxy: "https://dev.beautybop.co.uk/",
+            hostname: "https://dev.beautybop.co.uk/",
             port: 3000,  
     });
 });
