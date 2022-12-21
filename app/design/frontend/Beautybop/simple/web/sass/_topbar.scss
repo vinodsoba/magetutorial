@@ -6,7 +6,6 @@
     font-family: var(--fs-font-family);
     letter-spacing: 0.1em;
     font-size: var(--fs-small-text);
-    color: $black;
     text-align: center;
 
     @media ( max-width: 776px) {
@@ -17,14 +16,23 @@
 .opening-hours {
     font-family: var(--fs-font-family);
     font-size: var(--fs-small-text);
+    
 }
 
 .panel.header {
     @include py0;
+    
 
     & .links {
     display: flex !important;
     align-items: center;
+    }
+    .row {
+        .toprowcol1,
+        .toprowcol2,
+        .toprowcol3 ul.header.links a{
+            color: $white;
+        }
     }
 }
 
@@ -49,7 +57,6 @@ ul.header.links {
         align-items: center;
     }
     a {
-        color: $black;
         text-transform: uppercase;
         text-decoration: none;
         &:hover {
