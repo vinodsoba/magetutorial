@@ -2187,9 +2187,9 @@ body {
 
 .sparsh_banner_slider .caption h2 {
   font-size: 46px;
-  color: #000;
+  color: #fff;
   font-weight: 900;
-  text-transform: uppercase;
+  text-transform: initial;
   margin-top: 0;
 }
 
@@ -2203,21 +2203,22 @@ body {
 }
 
 .sparsh_banner_slider .caption .btn-banner {
-  border: 2px solid #000;
+  border-radius: 33px;
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
-  width: 40%;
-  height: 43px;
+  width: 239px;
+  height: 48px;
   line-height: 44px;
   text-align: center;
-  color: #000;
+  color: #fff;
   display: block;
+  background-color: #1C133A;
   text-decoration: none;
 }
 
 .sparsh_banner_slider .caption .btn-banner:hover {
-  background: #000;
+  background-color: #32178d;
   color: #fff;
 }
 
