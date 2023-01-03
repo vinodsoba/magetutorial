@@ -44,15 +44,16 @@ header.page-header {
     }
 
     .header.content {
-        padding: 8px 20px 0;
-        height: 41px;
+        padding: 12px 20px 0;
+        max-height: 66px;
+        height: auto;
 
         .headercol3 {
             .block-search.custom {
-                opacity: 1;
-                .searchbox {
+                .searchbox {                  
                     button.searchbox-submit::before {
                         content: url(/static/frontend/Beautybop/simple/en_GB/images/icon_search.png);
+                        
                     }
                 }
 
@@ -75,11 +76,21 @@ header.page-header {
             }
         }
     }
+
+    .block-search .action.search.disabled, 
+    .block-search .action.search[disabled], 
+    fieldset[disabled] .block-search .action.search {
+        opacity: 1;
+    }
 }
 
 nav.navigation  {
     background-color: $white;
 }
 
+
+.page-wrapper>.widget {
+    margin: 0;
+}
 
 
