@@ -452,12 +452,9 @@ header.page-header .row .header-column3 .minicart-wrapper {
 }
 
 header.page-header .header.content {
-  padding: 8px 20px 0;
-  height: 41px;
-}
-
-header.page-header .header.content .headercol3 .block-search.custom {
-  opacity: 1;
+  padding: 12px 20px 0;
+  max-height: 66px;
+  height: auto;
 }
 
 header.page-header .header.content .headercol3 .block-search.custom .searchbox button.searchbox-submit::before {
@@ -480,8 +477,18 @@ header.page-header .header.content .headercol4 .minicart-wrapper .action.showcar
   content: url("../../../../../../../../../../static/frontend/Beautybop/simple/en_GB/images/cart.png");
 }
 
+header.page-header .block-search .action.search.disabled,
+header.page-header .block-search .action.search[disabled],
+header.page-header fieldset[disabled] .block-search .action.search {
+  opacity: 1;
+}
+
 nav.navigation {
   background-color: #fff;
+}
+
+.page-wrapper > .widget {
+  margin: 0;
 }
 
 :root {
