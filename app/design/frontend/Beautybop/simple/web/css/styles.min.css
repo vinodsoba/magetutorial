@@ -451,6 +451,19 @@ header.page-header .row .header-column3 .minicart-wrapper {
   float: right !important;
 }
 
+header.page-header .header.content {
+  padding: 8px 20px 0;
+  height: 41px;
+}
+
+header.page-header .header.content .headercol3 .block-search.custom {
+  opacity: 1;
+}
+
+header.page-header .header.content .headercol3 .block-search.custom .searchbox button.searchbox-submit::before {
+  content: url("../../../../../../../../../../static/frontend/Beautybop/simple/en_GB/images/icon_search.png");
+}
+
 header.page-header .header.content .headercol4 {
   position: relative;
 }
