@@ -44,6 +44,21 @@ header.page-header {
     }
 
     .header.content {
+        padding: 8px 20px 0;
+        height: 41px;
+
+        .headercol3 {
+            .block-search.custom {
+                opacity: 1;
+                .searchbox {
+                    button.searchbox-submit::before {
+                        content: url(/static/frontend/Beautybop/simple/en_GB/images/icon_search.png);
+                    }
+                }
+
+            }
+        }
+
         .headercol4 {
             position: relative;
             .minicart-wrapper {
