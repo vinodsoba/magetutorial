@@ -21,11 +21,13 @@ foreach ($categories as $category) {
 $parentCategoryId = 8;
 $productCollection = $block->getProductCollection($parentCategoryId);
 
+
 ?>
 <div>
     <ol class="row list">
         <?php foreach ($productCollection as $product): ?>
             <li>
+                <span><?php echo $product->getUrl(); ?></span>
                 <span><?php echo $product->getSku(). ' - '. $product->getName() ?></span>
             </li>
         <?php endforeach; ?>    

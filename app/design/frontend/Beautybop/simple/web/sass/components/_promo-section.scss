@@ -1,0 +1,55 @@
+#promo-section {
+    background-color: $white;
+
+    .product-promo {
+        position: relative;
+        width: 650px;
+        height: 325px;
+        background-color: $bbop-brand-blue;
+        border-radius: 37px; 
+        padding: 39px 31.05px 210px 37.06px;
+      
+      
+      h3 {
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 38px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+      }
+
+      h4 {      
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF; 
+      }
+    
+      button.btn-shop {
+        @include btn-shop;
+        font-family: 'Assistant';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+
+        &:hover {
+            background-color: $bbop-button-bg-hover;
+            
+        }
+      }
+    }
+
+}
