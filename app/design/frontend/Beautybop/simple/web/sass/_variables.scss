@@ -170,3 +170,14 @@ body {
   text-transform: capitalize;
   text-align: center;
 }
+
+@mixin btn-shop {
+    position: absolute;
+    bottom: 36px;
+    right: 48px;
+    width: 230.35px;
+    height: 48px;
+    background: #1C133A;
+    border-radius: 37px;
+    border: none;
+}
