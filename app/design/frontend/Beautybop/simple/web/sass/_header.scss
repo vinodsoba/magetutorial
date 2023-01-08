@@ -62,9 +62,14 @@ header.page-header {
 
         .headercol4 {
             position: relative;
+
+            .col-lg-1 {
+                width: 10px;
+            }
+            
             .minicart-wrapper {
                 position: absolute;
-                left:0;
+                right: 6px;
                 display: flex;
                 flex-direction: column;
 
