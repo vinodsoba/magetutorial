@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1920px) and (min-width: 1000px) {
+  .page-main {
+    padding: 0 !important;
+  }
+}
+
 :root {
   --fs-small-text: 1.2em;
   --fs-font-family: "assistant", Arial, Helvetica, sans-serif;
@@ -465,9 +471,13 @@ header.page-header .header.content .headercol4 {
   position: relative;
 }
 
+header.page-header .header.content .headercol4 .col-lg-1 {
+  width: 10px;
+}
+
 header.page-header .header.content .headercol4 .minicart-wrapper {
   position: absolute;
-  left: 0;
+  right: 6px;
   display: flex;
   flex-direction: column;
 }
@@ -2694,4 +2704,84 @@ body {
 
 #promo-section .product-promo button.btn-shop:hover {
   background-color: #32178d;
+}
+
+.blog-section {
+  position: relative;
+  background-image: url("../../../../../../../../../../static/frontend/Beautybop/simple/en_GB/images/blog-sect-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 50px;
+  background-attachment: fixed;
+  height: 100%;
+  min-height: 215px;
+}
+
+.blog-section--layer {
+  width: 505px;
+  height: 200px;
+  background-color: #A93E78;
+  border-radius: 21px;
+  margin-left: 92px;
+  position: absolute;
+  top: -25px;
+  padding: 30px 31.05px 174px 37.06px;
+}
+
+.blog-section h3 {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 27px;
+}
+
+.blog-section h4 {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.blog-section button.btn-shop {
+  position: absolute;
+  bottom: 36px;
+  right: 48px;
+  width: 230.35px;
+  height: 48px;
+  background: #1C133A;
+  border-radius: 37px;
+  border: none;
+}
+
+.blog-section button.btn-shop:hover {
+  background-color: #32178d;
+}
+
+.blog-section button.btn-shop a {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
 }

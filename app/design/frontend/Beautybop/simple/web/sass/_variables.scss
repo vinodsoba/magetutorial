@@ -7,6 +7,7 @@ $bbop-purple--dark: #4f204d;
 $bbop-brand-blue: #4E1C88;
 $bbop-button-bg: #1C133A;
 $bbop-button-bg-hover: #32178d;
+$bbop-purple--layer: #A93E78;
 
 
 
@@ -180,4 +181,26 @@ body {
     background: #1C133A;
     border-radius: 37px;
     border: none;
+}
+
+@mixin h3 {
+    font-family: "Assistant";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+@mixin h4 {
+    font-family: "Assistant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }

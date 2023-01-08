@@ -1,12 +1,14 @@
-@import '_header';
-@import '_topbar';
-@import '_footer';
-@import '_search';
-@import '_navigation';
-@import '_heroslider';
-@import '_sparshbanner';
-@import '_section-title';
-@import '_frontpage';
+@import 'default';
+@import 'header';
+@import 'topbar';
+@import 'footer';
+@import 'search';
+@import 'navigation';
+@import 'heroslider';
+@import 'sparshbanner';
+@import 'section-title';
+@import 'frontpage';
 
 // components
 @import 'components/promo-section';
+@import 'components/blog-section';
