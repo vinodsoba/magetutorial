@@ -1,0 +1,64 @@
+.blog-section {
+    position: relative;
+    background-image: url(/static/frontend/Beautybop/simple/en_GB/images/blog-sect-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    background-attachment: fixed;
+    height: 100%;
+    min-height: 215px;
+    
+
+    &--layer {
+        width: 505px;
+        height: 200px;
+        background-color: $bbop-purple--layer;
+        border-radius: 21px;
+        margin-left: 92px;
+        position: absolute;
+        top: -25px;
+        padding: 30px 31.05px 174px 37.06px;
+    }
+
+    h3 {
+        @include h3;
+        font-size: 27px;
+    }
+
+    h4 {
+        @include h4;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    button.btn-shop {
+        
+        @include btn-shop;
+
+        &:hover {
+            background-color: $bbop-button-bg-hover;
+            
+        }
+        a {
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+
+            
+        }
+        
+    }
+
+}
