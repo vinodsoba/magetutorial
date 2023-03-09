@@ -19,17 +19,26 @@ foreach ($categories as $category) {
 
 
 $parentCategoryId = 8;
+
 $productCollection = $block->getProductCollection($parentCategoryId);
 
 
+
+
+
+
 ?>
-<div>
-    <ol class="row list">
+<div class="inspire-me"> 
+    <ul class="row list">
         <?php foreach ($productCollection as $product): ?>
-            <li>
+
+          <?php //echo print_r($product->getData()); ?>
+      
+           <li>
                 <span><?php echo $product->getUrl(); ?></span>
                 <span><?php echo $product->getSku(). ' - '. $product->getName() ?></span>
+                <span><?php echo $product->getPrice(); ?></span>
             </li>
         <?php endforeach; ?>    
-    </ol>
+    </ul>
 </div>
