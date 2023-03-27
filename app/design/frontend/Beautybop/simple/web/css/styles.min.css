@@ -2809,3 +2809,115 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
+
+#shop-by-category .cat-col-1 {
+  background-image: url("../images/olaplex-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 432px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shop-by-category .cat-col-1 a button {
+  width: 230.35px;
+  height: 48px;
+  background: #fff;
+  border-radius: 37px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+#shop-by-category .cat-col-1 a button:hover {
+  background-color: #ffd7d7;
+  color: #000;
+}
+
+#shop-by-category .cosmetics-col-1 {
+  background-image: url("../images/cosmetics-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 432px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shop-by-category .cosmetics-col-1 a button {
+  width: 230.35px;
+  height: 48px;
+  background: #fff;
+  border-radius: 37px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+#shop-by-category .cosmetics-col-1 a button:hover {
+  background-color: #ffd7d7;
+  color: #000;
+}
+
+#shop-by-category .skincare-col-1 {
+  background-image: url("../images/skincare-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 432px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shop-by-category .skincare-col-1 a button {
+  width: 230.35px;
+  height: 48px;
+  background: #fff;
+  border-radius: 37px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+#shop-by-category .skincare-col-1 a button:hover {
+  background-color: #ffd7d7;
+  color: #000;
+}
+
+#shop-by-category .fragrance-col-1 {
+  background-image: url("../images/womens-fragrance.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 432px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shop-by-category .fragrance-col-1 a button {
+  width: 230.35px;
+  height: 48px;
+  background: #fff;
+  border-radius: 37px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+#shop-by-category .fragrance-col-1 a button:hover {
+  background-color: #ffd7d7;
+  color: #000;
+}
