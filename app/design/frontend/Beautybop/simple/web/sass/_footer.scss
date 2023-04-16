@@ -1,13 +1,42 @@
 @import 'variables';
 
 footer {
-    background-color: $white;
+    background-color: $bbop-button-bg;
+    .links {
+        .bbop-footer-links {
+            p {
+                font-size: $fontsize_xsmall;
+                color: $white;
+            }
+
+            ul {
+                li {
+                    list-style: none;
+                    a {
+                        font-size: $fontsize_xsmall;
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            h3 {
+                @include h3;
+            }
+        }
+    }
+    
 }
 
-.footer.links {    
+ul.footer.links { 
+    li {
+        display: none; 
+    }  
     a {
-        font-size: $fontsize_xsmall;
+        font-size: $fontsize_medium;
         text-decoration: none;
-        color: $black;
+        color: $white;
     }
+
+    
 }
