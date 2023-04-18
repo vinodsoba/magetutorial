@@ -10,14 +10,43 @@ footer {
             }
 
             ul {
-                li {
+
+                li{
+                    display: flex;
                     list-style: none;
+                }
+                
+                    li.home:before {
+                        font-family: "FontAwesome";
+                        content: "\f015";
+                        color: $white;
+                        font-size: $fontsize_small;
+                        padding-right:5px;
+                    }
+                    li.envelope:before {
+                        font-family: "FontAwesome";
+                        content: "\f0e0";
+                        color: $white;
+                        font-size: $fontsize_xsmall;
+                        padding-right:5px;
+                        
+                    }
+                    li.phone:before {
+                        font-family: "FontAwesome";
+                        content: "\f095";
+                        color: $white;
+                        font-size: $fontsize_small;
+                        padding-right:5px;
+                        
+                    }
+                    
+                    
                     a {
                         font-size: $fontsize_xsmall;
                         color: $white;
                         text-decoration: none;
                     }
-                }
+                
             }
 
             h3 {
@@ -29,6 +58,7 @@ footer {
 }
 
 ul.footer.links { 
+    
     li {
         display: none; 
     }  

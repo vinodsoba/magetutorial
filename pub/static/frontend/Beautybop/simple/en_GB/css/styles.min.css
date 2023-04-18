@@ -1434,10 +1434,35 @@ footer .links .bbop-footer-links p {
 }
 
 footer .links .bbop-footer-links ul li {
+  display: flex;
   list-style: none;
 }
 
-footer .links .bbop-footer-links ul li a {
+footer .links .bbop-footer-links ul li.home:before {
+  font-family: "FontAwesome";
+  content: "\f015";
+  color: #fff;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+footer .links .bbop-footer-links ul li.envelope:before {
+  font-family: "FontAwesome";
+  content: "\f0e0";
+  color: #fff;
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+footer .links .bbop-footer-links ul li.phone:before {
+  font-family: "FontAwesome";
+  content: "\f095";
+  color: #fff;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+footer .links .bbop-footer-links ul a {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
