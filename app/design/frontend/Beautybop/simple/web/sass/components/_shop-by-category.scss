@@ -1,0 +1,76 @@
+#shop-by-category {
+    .cat-col-1 {
+        background-image: url('./../images/olaplex-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 432px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            button {
+                @include btn-shop-by-cat;
+            }
+        }
+    }
+
+    .cosmetics-col-1 {
+        background-image: url('./../images/cosmetics-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 432px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            button {
+                @include btn-shop-by-cat;
+            }
+        }
+    }
+
+    .skincare-col-1 {
+        background-image: url('./../images/skincare-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 432px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            button {
+                @include btn-shop-by-cat;
+            }
+        }
+    }
+
+    .fragrance-col-1 {
+        background-image: url('./../images/womens-fragrance.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 432px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+           
+            a {
+                button {
+                    @include btn-shop-by-cat;
+
+                   
+                }
+            }
+            
+        
+    }
+
+    
+
+}

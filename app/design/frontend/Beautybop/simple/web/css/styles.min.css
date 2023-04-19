@@ -1425,13 +1425,68 @@ body {
 }
 
 footer {
-  background-color: #fff;
+  background-color: #1C133A;
 }
 
-.footer.links a {
+footer .links .bbop-footer-links p {
   font-size: 16px;
+  color: #fff;
+}
+
+footer .links .bbop-footer-links ul li {
+  display: flex;
+  list-style: none;
+}
+
+footer .links .bbop-footer-links ul li.home:before {
+  font-family: "FontAwesome";
+  content: "\f015";
+  color: #fff;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+footer .links .bbop-footer-links ul li.envelope:before {
+  font-family: "FontAwesome";
+  content: "\f0e0";
+  color: #fff;
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+footer .links .bbop-footer-links ul li.phone:before {
+  font-family: "FontAwesome";
+  content: "\f095";
+  color: #fff;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+footer .links .bbop-footer-links ul a {
+  font-size: 16px;
+  color: #fff;
   text-decoration: none;
-  color: #000;
+}
+
+footer .links .bbop-footer-links h3 {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+ul.footer.links li {
+  display: none;
+}
+
+ul.footer.links a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
 }
 
 :root {
@@ -2687,7 +2742,7 @@ body {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 700;
-  font-size: 29px;
+  font-size: 20px;
   line-height: 38px;
   display: flex;
   align-items: center;
@@ -2756,7 +2811,7 @@ body {
   font-family: "Assistant";
   font-style: normal;
   font-weight: 700;
-  font-size: 29px;
+  font-size: 20px;
   line-height: 38px;
   display: flex;
   align-items: center;
@@ -2808,4 +2863,116 @@ body {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+}
+
+#shop-by-category .cat-col-1 {
+  background-image: url("../images/olaplex-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 432px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shop-by-category .cat-col-1 a button {
+  width: 230.35px;
+  height: 48px;
+  background: #fff;
+  border-radius: 37px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+#shop-by-category .cat-col-1 a button:hover {
+  background-color: #ffd7d7;
+  color: #000;
+}
+
+#shop-by-category .cosmetics-col-1 {
+  background-image: url("../images/cosmetics-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 432px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shop-by-category .cosmetics-col-1 a button {
+  width: 230.35px;
+  height: 48px;
+  background: #fff;
+  border-radius: 37px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+#shop-by-category .cosmetics-col-1 a button:hover {
+  background-color: #ffd7d7;
+  color: #000;
+}
+
+#shop-by-category .skincare-col-1 {
+  background-image: url("../images/skincare-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 432px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shop-by-category .skincare-col-1 a button {
+  width: 230.35px;
+  height: 48px;
+  background: #fff;
+  border-radius: 37px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+#shop-by-category .skincare-col-1 a button:hover {
+  background-color: #ffd7d7;
+  color: #000;
+}
+
+#shop-by-category .fragrance-col-1 {
+  background-image: url("../images/womens-fragrance.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 432px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shop-by-category .fragrance-col-1 a button {
+  width: 230.35px;
+  height: 48px;
+  background: #fff;
+  border-radius: 37px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+#shop-by-category .fragrance-col-1 a button:hover {
+  background-color: #ffd7d7;
+  color: #000;
 }

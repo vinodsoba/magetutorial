@@ -183,11 +183,29 @@ body {
     border: none;
 }
 
+@mixin btn-shop-by-cat {
+    width: 230.35px;
+    height: 48px;
+    background: $white;
+    border-radius: 37px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+
+    &:hover {
+        background-color: $lightpink;
+        color: $black;
+    }
+    
+}
+
 @mixin h3 {
     font-family: "Assistant";
     font-style: normal;
     font-weight: 700;
-    font-size: 29px;
+    font-size: 20px;
     line-height: 38px;
     display: flex;
     align-items: center;
