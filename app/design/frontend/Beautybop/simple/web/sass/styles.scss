@@ -8,8 +8,12 @@
 @import 'sparshbanner';
 @import 'section-title';
 @import 'frontpage';
+@import 'registration-form';
 
 // components
 @import 'components/promo-section';
 @import 'components/blog-section';
 @import 'components/shop-by-category';
+
+// responsive
+@import 'responsive/responsive'

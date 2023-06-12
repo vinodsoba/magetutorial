@@ -1,0 +1,19 @@
+.form-create-account {
+    margin: 0 auto;
+
+    .fieldset {
+        .field {
+            display: grid;
+            .field:not(.chioce)>label {
+                text-align: left;
+            }
+
+            label.label {
+                font-size: $fontsize_xsmall;
+                text-align: left;
+            }
+        }
+        
+    }
+
+}
