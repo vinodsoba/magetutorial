@@ -1,3 +1,5 @@
+@import './../../sass/responsive/responsive.scss';
+
 .blog-section {
     position: relative;
     background-image: url(/static/frontend/Beautybop/simple/en_GB/images/blog-sect-bg.png);
@@ -10,7 +12,14 @@
     
 
     &--layer {
-        width: 505px !important;
+            @include atLarge {
+                width: 100%;
+            }
+
+            @include atSmall {
+                margin-left: 0;
+                height: auto;
+            }
         height: 200px;
         background-color: $bbop-purple--layer;
         border-radius: 21px;
@@ -57,6 +66,10 @@
             color: #FFFFFF;
 
             
+        }
+
+        @include atSmall {
+            bottom: 0;
         }
         
     }

@@ -2725,13 +2725,30 @@ body {
   -webkit-box-orient: vertical;
 }
 
+.form-create-account {
+  margin: 0 auto;
+}
+
+.form-create-account .fieldset .field {
+  display: grid;
+}
+
+.form-create-account .fieldset .field .field:not(.chioce) > label {
+  text-align: left;
+}
+
+.form-create-account .fieldset .field label.label {
+  font-size: 16px;
+  text-align: left;
+}
+
 #promo-section {
   background-color: #fff;
 }
 
 #promo-section .product-promo {
   position: relative;
-  width: 650px;
+  max-width: 650px;
   height: 325px;
   background-color: #4E1C88;
   border-radius: 37px;
@@ -2797,7 +2814,6 @@ body {
 }
 
 .blog-section--layer {
-  width: 505px !important;
   height: 200px;
   background-color: #A93E78;
   border-radius: 21px;
@@ -2805,6 +2821,19 @@ body {
   position: absolute;
   top: -25px;
   padding: 30px 31.05px 174px 37.06px;
+}
+
+@media (max-width: 1200px) {
+  .blog-section--layer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  .blog-section--layer {
+    margin-left: 0;
+    height: auto;
+  }
 }
 
 .blog-section h3 {
@@ -2863,6 +2892,12 @@ body {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+}
+
+@media (max-width: 530px) {
+  .blog-section button.btn-shop {
+    bottom: 0;
+  }
 }
 
 #shop-by-category .cat-col-1 {
