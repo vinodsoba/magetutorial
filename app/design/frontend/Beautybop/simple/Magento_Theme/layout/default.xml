@@ -43,16 +43,16 @@
         
         <referenceBlock name="header-wrapper">
             <container name="header-row" htmlClass="row" htmlTag="div">
-            <container name="headercol4" htmlClass="headercol4 col-sm-12 col-md-2 col-lg-1" htmlTag="div" before="-">        
+            <container name="headercol4" htmlClass="headercol4 col-sm-3 col-md-2 col-lg-1" htmlTag="div" before="-">        
                 </container>
 
-                <container name="headercol3" htmlClass="headercol3 col-sm-12 col-md-2 col-lg-2" htmlTag="div" before="-">        
+                <container name="headercol3" htmlClass="headercol3 col-sm-3 col-md-2 col-lg-2" htmlTag="div" before="-">        
                 </container>
 
-                <container name="headercol2" htmlClass="headercol2 col-sm-12 col-md-4 col-lg-6" htmlTag="div" before="-">         
+                <container name="headercol2" htmlClass="headercol2 col-sm-3 col-md-4 col-lg-6" htmlTag="div" before="-">         
                 </container>
 
-                 <container name="headercol1" htmlClass="headercol1 col-sm-12 col-md-4 col-lg-3" htmlTag="div" before="-">        
+                 <container name="headercol1" htmlClass="headercol1 col-sm-3 col-md-4 col-lg-3" htmlTag="div" before="-">        
                 </container>
             </container>
         </referenceBlock>  
