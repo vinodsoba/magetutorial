@@ -450,14 +450,37 @@ header.page-header .row {
   display: inline-flex;
 }
 
-header.page-header .row .header-column1 {
-  width: 100%;
+header.page-header .row .headercol1 {
   display: flex;
   justify-content: space-around;
 }
 
-header.page-header .row .header-column1 .nav-sections {
+header.page-header .row .headercol1 .nav-sections {
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  header.page-header .row .headercol1 {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 538px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header.page-header .row .headercol1 .logo {
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header.page-header .row .headercol1 .logo {
+    width: 98%;
+  }
 }
 
 header.page-header .row .header-column2 {
@@ -476,6 +499,14 @@ header.page-header .row .header-column3 .minicart-wrapper {
   float: right !important;
 }
 
+@media screen and (max-width: 767px) {
+  header.page-header .row .header-column3 {
+    position: absolute;
+    top: 35px;
+    right: 42px;
+  }
+}
+
 header.page-header .header.content {
   padding: 12px 20px 0;
   max-height: 66px;
@@ -487,7 +518,8 @@ header.page-header .header.content .headercol3 .block-search.custom .searchbox b
 }
 
 header.page-header .header.content .headercol4 {
-  position: relative;
+  position: absolute;
+  right: 20px;
 }
 
 header.page-header .header.content .headercol4 .col-lg-1 {
@@ -974,6 +1006,15 @@ body {
 .toprowcol2.col-sm-12.col-md-4 {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .toprowcol1.col-sm-12.col-md-4,
+  .toprowcol2.col-sm-12.col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .toprowcol3.col-sm-12.col-md-4 {
@@ -2823,9 +2864,9 @@ body {
   padding: 30px 31.05px 174px 37.06px;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 767px) {
   .blog-section--layer {
-    width: 100%;
+    width: auto !important;
   }
 }
 

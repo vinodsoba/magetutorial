@@ -12,8 +12,8 @@
     
 
     &--layer {
-            @include atLarge {
-                width: 100%;
+            @media screen and (max-width: 767px) {
+                width: auto !important;
             }
 
             @include atSmall {
