@@ -2783,6 +2783,10 @@ body {
   text-align: left;
 }
 
+.form-create-account .fieldset span {
+  font-weight: bold;
+}
+
 #promo-section {
   background-color: #fff;
 }
