@@ -1956,8 +1956,9 @@ footer .links .bbop-footer-links h3 {
   color: #FFFFFF;
 }
 
-footer .bugs {
-  display: none;
+footer .copyright {
+  color: #fff;
+  font-size: 12px;
 }
 
 ul.footer.links li {

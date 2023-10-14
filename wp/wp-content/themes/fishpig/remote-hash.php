@@ -2,5 +2,5 @@
 /**
  *
  */
-$remoteHash = '1db7f949ad01a25e9b570deb8249f9f6';
+$remoteHash = 'c5cc5bc672b529d42d9183e52a14f135';
 return $remoteHash;
