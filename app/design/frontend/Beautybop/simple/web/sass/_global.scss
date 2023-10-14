@@ -1,0 +1,23 @@
+@import 'variables';
+
+button.action.submit.primary {
+    background-color: $bbop-button-bg;
+    color: $white;
+    font-weight: 100;
+    border: 0;
+    padding: 10px 20px;
+}
+
+button.action.subscribe.primary {
+    background-color: $bbop-brand-blue;
+    color: $white;
+    font-weight: 100;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+
+button.action.submit.primary:hover,
+button.action.subscribe.primary:hover {
+    background-color: $bbop-button-bg-hover;
+}
