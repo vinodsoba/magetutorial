@@ -65,6 +65,7 @@
         <move element="top.links" destination="toprowcol3" after="free.shipping"/>
         <move element="minicart" destination="headercol4" after="top.search" />
         <move element="top.search" destination="headercol3" before="minicart" />
+        <move element="form.subscribe" destination="footer" after="-" />
         <referenceBlock name="wish-list-link" remove="true" />
         <referenceBlock name="advanced-search-link" remove="true"/>
     </body>
